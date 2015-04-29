@@ -17,7 +17,7 @@
     "modules"
   ],
   "author": "Qawelesizwe Mlilo <qawemlilo@gmail.com> (http://blog.ragingflame.co.za/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/NodeZA/ghost-sandbox/issues"
   },

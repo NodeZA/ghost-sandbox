@@ -1,0 +1,11 @@
+{
+  "name": "ghost-sandbox",
+  "version": "0.1.0",
+  "dependencies": {
+    "lodash": {
+      "version": "3.7.0",
+      "from": "lodash@",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-3.7.0.tgz"
+    }
+  }
+}

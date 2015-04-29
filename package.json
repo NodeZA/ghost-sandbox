@@ -1,0 +1,32 @@
+{
+  "name": "ghost-sandbox",
+  "version": "0.1.0",
+  "description": "Sandbox for loading node modules extracted from Ghost",
+  "main": "index.js",
+  "scripts": {
+    "jshint": "jshint lib test",
+    "test": "npm run jshint && mocha test/sandbox.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeZA/ghost-sandbox.git"
+  },
+  "keywords": [
+    "sandbox",
+    "ghost",
+    "modules"
+  ],
+  "author": "Qawelesizwe Mlilo <qawemlilo@gmail.com> (http://blog.ragingflame.co.za/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NodeZA/ghost-sandbox/issues"
+  },
+  "homepage": "https://github.com/NodeZA/ghost-sandbox",
+  "dependencies": {
+    "lodash": "^3.7.0"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "jshint": "^2.7.0"
+  }
+}

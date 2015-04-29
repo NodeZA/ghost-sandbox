@@ -9,17 +9,35 @@ npm install ghost-sandbox
 ```
 
 
-### Example
+### Example 1: Using a whitelist
+
+Using a `whitelist` will only allow the the sandboxed module to require the listed modules.
 
 ```
-var Sandbox = require('ghost-sandbox');
+var Sandbox = require('ghost-sandbox'); 
 
 var sandbox = new Sandbox({
   whitelist: ['when', 'lodash', ...]
 });
 
-var sandboxedModule = sandbox.loadWidget({String}relativePath);
+var sandboxedModule = sandbox.loadWidget(modulePath);
 ```
+
+### Example 2: Using a blacklist
+
+Using a `blacklist` will only reject the listed modules.
+
+```
+var Sandbox = require('ghost-sandbox'); 
+
+var sandbox = new Sandbox({
+  blacklist: ['path', 'fs', ...]
+});
+
+var sandboxedModule = sandbox.loadWidget(modulePath);
+```
+
+**Note:** If you include both options, the `whitelist` will supersede the `blacklist`.
 
 
 License

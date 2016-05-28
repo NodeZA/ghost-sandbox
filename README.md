@@ -13,7 +13,7 @@ npm install ghost-sandbox
 
 Using a `whitelist` will only allow the the sandboxed module to require the listed modules.
 
-```
+```javascript
 "use strict";
 
 const Sandbox = require('ghost-sandbox');
@@ -29,7 +29,7 @@ const sandboxedModule = sandbox.loadWidget(modulePath);
 
 Using a `blacklist` will only reject the listed modules.
 
-```
+```javascript
 "use strict";
 
 const Sandbox = require('ghost-sandbox');

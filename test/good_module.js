@@ -1,6 +1,7 @@
+"use strict";
 
 // loading a permitted module
-var _ = require('lodash');
+const _ = require('lodash');
 
 module.exports = {
   name: 'Good module'

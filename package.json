@@ -1,11 +1,12 @@
 {
   "name": "ghost-sandbox",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Sandbox for loading node modules extracted from Ghost",
   "main": "index.js",
   "scripts": {
     "jshint": "jshint lib test",
-    "test": "npm run jshint && mocha test/sandbox.js"
+    "test": "./node_modules/mocha/bin/mocha test/sandbox.js",
+    "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "chai": "^2.3.0",
-    "jshint": "^2.7.0"
+    "jshint": "^2.7.0",
+    "mocha": "^2.5.3"
   }
 }

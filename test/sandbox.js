@@ -13,7 +13,7 @@ describe('Sandbox', function(){
     it('should load good module without errors', function(done){
 
       let sandbox = new Sandbox({
-        whitelist: ['lodash']
+        whitelist: ['http']
       });
 
       let sandboxed = sandbox.loadWidget(good_module);
@@ -27,7 +27,7 @@ describe('Sandbox', function(){
     it('should fail to load good module because of blacklist', function(done){
 
       let sandbox = new Sandbox({
-        blacklist: ['lodash']
+        blacklist: ['http']
       });
 
       try {
@@ -45,7 +45,7 @@ describe('Sandbox', function(){
     it('should fail to load bad module', function(done){
 
       let sandbox = new Sandbox({
-        whitelist: ['lodash']
+        whitelist: ['net']
       });
 
       try {
@@ -63,8 +63,8 @@ describe('Sandbox', function(){
     it('should load good module without errors. Whitelist supersedes blacklist', function(done){
 
       let sandbox = new Sandbox({
-        whitelist: ['lodash'],
-        blacklist: ['lodash']
+        whitelist: ['http'],
+        blacklist: ['http']
       });
 
       let sandboxed = sandbox.loadWidget(good_module);

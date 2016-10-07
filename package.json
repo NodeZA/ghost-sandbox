@@ -1,6 +1,6 @@
 {
   "name": "ghost-sandbox",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Sandbox for loading node modules extracted from Ghost",
   "main": "index.js",
   "scripts": {
@@ -17,15 +17,12 @@
     "ghost",
     "modules"
   ],
-  "author": "Qawelesizwe Mlilo <qawemlilo@gmail.com> (http://blog.ragingflame.co.za/)",
+  "author": "Qawelesizwe Mlilo <qawemlilo@gmail.com> (http://blog.ragingflame.co.za)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NodeZA/ghost-sandbox/issues"
   },
   "homepage": "https://github.com/NodeZA/ghost-sandbox",
-  "dependencies": {
-    "lodash": "^3.7.0"
-  },
   "devDependencies": {
     "chai": "^2.3.0",
     "jshint": "^2.7.0",
